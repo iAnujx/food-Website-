@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Foods Place</title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="Mama_s_Kitchen-removebg new.png" alt="Organic Food Logo">
+        </div>
+
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <nav class="menu-bar" id="menu-bar">
+            <ul class="menu">
+                <li>
+                    <h2><a href="#">Home</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Special Menu</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Foods</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Famous Recipe</a></h2>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="search-section">
+                <input type="text" class="searchBox" placeholder="Search for recipes...">
+                <button class="searchBtn">Search</button>
+            </section>
+
+            <section id="featured-recipe">
+                <div id="featured-recipe-content">
+                </div>
+            </section>
+
+
+        </main>
+        <div class="login-button">
+            <a href="#" class="login">Login</a>
+            <span class="cart">Sign Up</span>
+        </div>
+    </header>
+
+
+<!-- here -->
+    <div id="text">
+        <section class="hero">
+            <div class="text-content">
+                <h1>One Stop <span class="highlight">Delicious</span> Recipe Place</h1>
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="order-button">Find best Recipe</a>
+            </div>
+        </section>
+        <section id="recipe-list">
+
+            <div class="recipe-container" id="recipes">
+
+            </div>
+        </section>
+
+
+        <!-- <aside class="sidebar"> -->
+        <section id="explore">
+            <br>
+            <h2>Explore Featured Recipes</h2>
+            <br>
+            <div class="recipe-list">
+                <!-- 1 -->
+                <div class="recipe-card" onclick="toggleDetails(this)">
+                    <h3>Mediterranean Quinoa Salad</h3>
+                    <img src="Mediterranean Quinoa Salad.webp" alt="img" height="180px" width="235px">
+                    <p>A healthy mix of quinoa, fresh veggies, and herbs.</p>
+                    <div class="recipe-details">
+                        <p><strong>Ingredients:</strong> Quinoa, Cucumber, Tomato, Olives, Lemon.</p>
+                        <p><strong>Method:</strong> Cook quinoa, chop veggies, mix with dressing.</p>
+                    </div>
+                </div>
+                <!-- 1 -->
+                 
+                <!-- 2 -->
+                <div class="recipe-card" onclick="toggleDetails(this)">
+                    <h3>Honey Garlic Chicken</h3><br>
+                    <img src="Honey Garlic Chicken.webp" alt="img" height="180px" width="235px">
+                    <p>Sweet and savory chicken cooked to perfection.</p>
+                    <div class="recipe-details">
+                        <p><strong>Ingredients:</strong> Chicken thighs, Honey, Garlic, Soy sauce.</p>
+                        <p><strong>Method:</strong> Marinate, sear, bake until golden.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+
+                <!-- 3 -->
+                <div class="recipe-card" onclick="toggleDetails(this)">
+                    <h3>Avocado Toast Deluxe</h3><br>
+                    <img src="Avocado Toast Deluxe.webp" alt="img" height="180px" width="235px">
+                    <p>Perfectly toasted bread topped with mashed avocado and extras.</p>
+                    <div class="recipe-details">
+                        <p><strong>Ingredients:</strong> Avocado, Bread, Egg, Feta, Chili flakes.</p>
+                        <p><strong>Method:</strong> Toast bread, mash avocado, add toppings.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+
+                <!-- 4 -->
+                <div class="recipe-card" onclick="toggleDetails(this)">
+                    <h3>Spaghetti Aglio e Olio</h3><br>
+                    <img src="Spaghetti Aglio e Olio.webp" alt="img" height="180px" width="235px">
+                    <p>A simple Italian pasta dish with garlic,olive oil,and chili flakes,grarnished with parsely.</p>
+                    <div class="recipe-details">
+                        <p><strong>Ingredients:</strong> Spaghetti,garlic,olive,chili flakes,parsely.</p>
+                        <p><strong>Method:</strong> Boil pasta,saute garlic and chili in oli,toss pasta,add parsely.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+
+                <!-- 5 -->
+            <div class="recipe-card" onclick="toggleDetails(this)">
+                <h3>vegetable stir-fry</h3><br>
+                <img src="vegetable stir-fry.webp" alt="img" height="180px" width="235px">
+                <p>A colorful mix of veggies tossed in savory soy-based sauce,perfect as a healthy side or main dish
+                    with rice.</p>
+                <div class="recipe-details">
+                    <p><strong>Ingredients:</strong> Mixed veggies,garlic,soy sauce,oyster sauce,cornstarch,oil.</p>
+                    <p><strong>Method:</strong>Stir-fry garlic,add veggies,sauces,cornstrach mix,and serve.</p>
+                </div>
+            </div>
+            <!-- 5 -->
+
+            <!-- 6 -->
+    <div class="recipe-card" onclick="toggleDetails(this)">
+        <h3>chocolate Mug cake</h3><br>
+        <img src="chocolate Mug cake.webp" alt="img" height="180px" width="235px">
+        <p>A quickand easy single-serving chocolate dessert made in a mug,ready in under 2 minutes in th microwave.</p>
+        <div class="recipe-details">
+            <p><strong>Ingredients:</strong> Flour,sugar,cocoa,baking powder,milk,oli,vanilla,choc chips.</p>
+            <p><strong>Method:</strong>Mix ingredient in a mug, and microwave it for 1-1.5 mins and enjoy.</p>
+        </div>
+    </div>
+    <!-- 6 -->
+
+    <!-- 7 -->
+    <div class="recipe-card" onclick="toggleDetails(this)">
+        <h3>Pancakes</h3><br>
+        <img src="pancakes.webp" alt="img" height="180px" width="235px">
+        <p>Fluffy breakfast cakes served with syrup,fruits,or butter.</p>
+        <div class="recipe-details">
+            <p><strong>Ingredients:</strong> Flour,milk,egg,sugar,baking powder,butter.</p>
+            <p><strong>Method:</strong>Mix batter,cook on a greased pan,flip,and serve.</p>
+        </div>
+    </div>
+    <!-- 7 -->
+
+    <!-- 8 -->
+    <div class="recipe-card" onclick="toggleDetails(this)">
+        <h3>Tomato Soup</h3><br>
+        <img src="Tomato Soup.webp" alt="img" height="180px" width="235px">
+        <p>A comforting,creamy soup made with fresh tomatoes,perfect for cold evenings.</p>
+        <div class="recipe-details">
+            <p><strong>Ingredients:</strong>Tomatoes,onion,garlic,cream,spices.</p>
+            <p><strong>Method:</strong>saute onions,garlic,add tomatoes,cook,blend,and season.</p>
+        </div>
+    </div>
+    <!-- 8 -->
+    </div>
+    </div>
+    </section>
+    <!-- <li><a href="index.html">Home</a></li> <li><a href="page2.html">Page 2</a></li> <li><a href="page3.html">Page 3</a></li> -->
+
+
+    <!-- <section class="Tips">
+    <h2>Cooking Tips</h2>
+    <ul>
+            <li>🧄 Always use fresh ingredients for the best flavor.</li>
+            <li>🔥 Preheat your oven or pan before cooking.</li>
+            <li>🌶️ Experiment with spices to enhance your dishes.</li>
+            <li>🧄 Always use fresh ingredients for the best flavor.</li>
+            <li>🔥 Preheat your oven or pan before cooking.</li>
+            <li>🌶️ Experiment with spices to enhance your dishes.</li>
+            <li>🧄 Always use fresh ingredients for the best flavor.</li>
+            <li>🔥 Preheat your oven or pan before cooking.</li>
+            <li>🌶️ Experiment with spices to enhance your dishes.</li>
+        </ul>
+    
+       <h2>Featured Articles</h2>
+        <ul>
+            <li><a href="#">5 Easy Indian Dishes for Beginners</a></li>
+            <li><a href="#">How to Make Perfect Roti</a></li>
+            <li><a href="#">The Art of Indian Cooking</a></li>
+            <li><a href="#">5 Easy Indian Dishes for Beginners</a></li>
+            <li><a href="#">How to Make Perfect Roti</a></li>
+            <li><a href="#">The Art of Indian Cooking</a></li>
+        </ul> -->
+
+    </section>
+
+    <hr>
+    <script src="script.js"></script>
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="end">
+            <img src="Mama_s_Kitchen-removebg new.png" alt="Organic Food Logo">
+        </div>
+        <div class="temp">
+            <h1>Ready to cook?</h1>
+            <h2>Sign up for our weekly special!</h2>
+            <br>
+            <label for="Email"></label>
+            <input type="text" placeholder="Enter your email" id="email">
+            <button type="submit"> Sign up</button>
+        </div>
+        <!-- <div class="About">
+                <ul class="footer-links">
+                    <li><a href="#"><h3>Follow Us</a></h3></li> 
+                    <li><a href="#"><h3>Contact Us</h3></a></li>
+                    <li><a href="#"><h3>Privacy Policy</h3></a></li>
+                </ul>
+             </div>
+             <br>
+             -->
+        <!-- <hr> -->
+        <div class="bottom line">
+            <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by Mama's kitchen
+            </p>
+        </div>
+        <div class="row">
+            <a href="https://www.facebook.com/profile.php?id=61569669893823"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mams_kitchen001/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCLpzbepPdWGoohJ65TrDryg"><i class="fa fa-youtube"></i></a>
+            <a href="https://x.com/JJokerdie"><i class="fa fa-twitter"></i></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
